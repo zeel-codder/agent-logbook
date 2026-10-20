@@ -1,0 +1,6 @@
+{
+  "name": "agent-logbook",
+  "version": "1.1.0",
+  "description": "Writes every agent's actions in a session to markdown: agent-logs/<session_id>/main.md, agent1.md, agent2.md… Pure Python, no AI calls, zero tokens.",
+  "author": { "name": "Zeel" }
+}

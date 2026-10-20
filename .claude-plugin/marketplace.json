@@ -1,0 +1,16 @@
+{
+  "name": "agent-logbook",
+  "owner": {
+    "name": "Zeel"
+  },
+  "metadata": {
+    "description": "agent-logbook: per-agent markdown logs for Claude Code sessions."
+  },
+  "plugins": [
+    {
+      "name": "agent-logbook",
+      "source": "./",
+      "description": "Writes every agent's actions in a Claude Code session to markdown, one file per agent. Pure Python, no AI calls, zero tokens."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "description": "agent-logbook: log each agent to agent-logs/<session_id>/agentN.md",
+  "hooks": {
+    "SubagentStop": [
+      { "hooks": [ { "type": "command", "command": "python3",
+                     "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/logbook.py"],
+                     "async": true, "timeout": 30 } ] }
+    ],
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "python3",
+                     "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/logbook.py"],
+                     "async": true, "timeout": 30 } ] }
+    ],
+    "SessionEnd": [
+      { "hooks": [ { "type": "command", "command": "python3",
+                     "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/logbook.py"],
+                     "timeout": 15 } ] }
+    ]
+  }
+}
